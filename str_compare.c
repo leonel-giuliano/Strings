@@ -19,7 +19,7 @@ void main() {
 
     for(char i = 0; i < STR_CANT; i++) pedirStr(str, i); /* El "for" compara con STR_CANT y no directamente 2 por si cambiaba el código para comparar más de 2 strings a la vez */
     char comprob = compare(str);
-    
+
     final(comprob);
 }
 
@@ -33,7 +33,7 @@ char compare(char str[STR_CANT][STR_MAX]) {
 
     for(int i = 0; str[STR1][i] || str[STR2][i]; i++) { /* Compara cada carácter entre sí */
         if(str[STR1][i] != str[STR2][i]) { /* Si son distintos, termina la comprobación */
-            bool = 0;
+            bool--;
             break;
         }
     }
